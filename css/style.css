@@ -1,13 +1,13 @@
 body {
   overflow-x: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Averta-Regular;
   color: #505962;
 }
 
 /* navigation */
 
 .navbar {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: 0.1rem;
@@ -26,6 +26,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: #000;
   padding-top: 0.8rem;
+  font-size: 16px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -37,14 +38,14 @@ body {
 
 .mentor-intro {
   background: #F2EBE9;
-  height: 326px;
-  padding-top: 142px;
+  height: 560px;
+ 
 }
-
+ 
 .mentor-intro p{
     font-size: 32px;
     font-family: Averta-Bold;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 96px;
 }
@@ -52,15 +53,20 @@ body {
 .page-heading {
   color: #E7332B;
   font-size: 14px;
+  padding-top: 280px;
 }
 
 
 
 #mentor-gallery {
-  margin-top: 30px;
+  margin-top: 98px;
 }
 .mentor-image {
   text-align: center;
+}
+
+.mentor-detail {
+  margin-bottom: 100px;
 }
 
 .mentor-info {
@@ -69,17 +75,89 @@ body {
 
 .mentor-name {
   margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mentor-track {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* enroll section */
+
+#enroll {
+  height: 669px;
+  padding: 173px 0 153px 0;
+}
+
+#enroll-content {
+  background: url('../img/dark-bg.svg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 342px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#enroll-content p {
+  margin-bottom: 48px;
+  font-size: 24px;
+}
+
+.btn-red {
+  width: 148px;
+  height: 46px;
+  background: #E7332B;
+  color: #fff;
 }
 
 /* media queries */
 
 @media (max-width: 767px){
 
+  .mentor-intro {
+    height: 326px;
+  }
+
+  .page-heading {
+    padding-top: 142px;
+  }
+
   .mentor-intro p{
     font-size: 14px;
+    width: 100%;
+  }
+
+  #mentor-gallery {
+    margin-top: 30px;
+  }
+
+  .mentor-detail {
+    margin-bottom: 30px;
   }
   .mentor-info {
-  padding: 0 10px ;
+    padding: 0 10px ;
+  }
+
+  /* enroll section */
+
+  #enroll {
+    height: 669px;
+    padding: 113px 0 153px 0;
 }
+#enroll .container {
+  margin: 0;
+  padding: 0;
+}
+
+#enroll-content {
+  height: 200px;
+}
+
+  #enroll-content p {
+    font-size: 16px;
+  }
 
 }
