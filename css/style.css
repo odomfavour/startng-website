@@ -1,0 +1,85 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #505962;
+}
+
+/* navigation */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 0.1rem;
+ background: #F2EBE9!important;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #000 !important;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #E7332B;
+}
+
+/* mentor page */
+
+.mentor-intro {
+  background: #F2EBE9;
+  height: 326px;
+  padding-top: 142px;
+}
+
+.mentor-intro p{
+    font-size: 32px;
+    font-family: Averta-Bold;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 96px;
+}
+
+.page-heading {
+  color: #E7332B;
+  font-size: 14px;
+}
+
+
+
+#mentor-gallery {
+  margin-top: 30px;
+}
+.mentor-image {
+  text-align: center;
+}
+
+.mentor-info {
+  padding: 0 10px ;
+}
+
+.mentor-name {
+  margin-top: 20px;
+}
+
+/* media queries */
+
+@media (max-width: 767px){
+
+  .mentor-intro p{
+    font-size: 14px;
+  }
+  .mentor-info {
+  padding: 0 10px ;
+}
+
+}
