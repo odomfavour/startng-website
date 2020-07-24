@@ -1,7 +1,62 @@
+/* @font-face {
+  font-family: 'Averta-Regular' ;
+  src: url('Averta Regular'),
+  url('../iFonts.xyz-Averta\ 16xOTF/Averta-Regular.woof')
+  format('woof');
+  font-weight: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Averta-Bold' ;
+  src: url('Averta Bold'),
+  url('../iFonts.xyz-Averta\ 16xOTF/Averta-Bold.woof')
+  format('woof');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Averta-Semibold' ;
+  src: url('Averta Semibold'),
+  url('../iFonts.xyz-Averta\ 16xOTF/Averta-Semibold.woof')
+  format('woof');
+  font-weight: normal;
+  font-weight: normal;
+} */
+
+@font-face {
+    font-family: "Averta";
+    src: url("fonts/Averta-Thin.woff") format("woff"),
+         url("fonts/Averta-Thin.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("fonts/Averta.woff") format("woff"),
+         url("fonts/Averta.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("fonts/Averta-Semibold.woff") format("woff"),
+         url("fonts/Averta-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Averta";
+    src: url("fonts/Averta-Bold.woff") format("woff"),
+         url("fonts/Averta-Bold.otf") format("opentype");
+    font-weight: 900;
+}
+
 body {
   overflow-x: hidden;
-  font-family: Averta-Regular;
-  color: #505962;
+  font-family: Averta;
+}
+
+.active {
+  color: #E7332B !important;
 }
 
 /* navigation */
@@ -38,7 +93,7 @@ body {
 
 .mentor-intro {
   background: #F2EBE9;
-  height: 560px;
+  height: 306px;
  
 }
  
@@ -53,7 +108,7 @@ body {
 .page-heading {
   color: #E7332B;
   font-size: 14px;
-  padding-top: 280px;
+  padding-top: 80px;
 }
 
 
@@ -69,9 +124,7 @@ body {
   margin-bottom: 100px;
 }
 
-.mentor-info {
-  padding: 0 10px ;
-}
+
 
 .mentor-name {
   margin-top: 20px;
@@ -80,7 +133,7 @@ body {
 
 .mentor-track {
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 /* enroll section */
@@ -91,7 +144,7 @@ body {
 }
 
 #enroll-content {
-  background: url('../img/dark-bg.svg') no-repeat;
+  background: url('../images/mentors/dark-bg.svg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 342px;
@@ -124,6 +177,10 @@ body {
   .page-heading {
     padding-top: 142px;
   }
+
+  .mentor-info {
+  padding: 0 10px ;
+}
 
   .mentor-intro p{
     font-size: 14px;
