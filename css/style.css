@@ -89,7 +89,7 @@ body {
 }
 
 .mentor-detail {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 
@@ -134,6 +134,53 @@ body {
   color: #fff;
 }
 
+/* footer */
+
+footer p {
+  font-family: Averta-Bold;
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+}
+
+footer a{
+  font-family: Averta-Regular;
+  font-size: 12px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-content {
+  justify-content: space-between;
+  border-bottom: 1px solid #514949;
+  padding-bottom: 30px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex-direction: column;
+}
+
+footer a {
+  color: #514949;
+  
+}
+
+footer li {
+  font-family: Averta-Regular;
+  font-size: 12px
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #E7332B;
+  font-weight: 700;
+}
+
 /* media queries */
 
 @media (max-width: 767px){
@@ -170,8 +217,8 @@ body {
   /* enroll section */
 
   #enroll {
-    height: 669px;
-    padding: 113px 0 153px 0;
+    height: 201px;
+    padding: 10px 0 153px 0;
 }
 #enroll .container {
   margin: 0;
@@ -184,6 +231,41 @@ body {
 
   #enroll-content p {
     font-size: 16px;
+  }
+
+  .footer-content {
+    display: none !important;
+  }
+
+  .footer-logo {
+    margin: 80px 0;
+  }
+
+  .social-handles {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    justify-content: center;
+  }
+
+  .socials img {
+    margin-bottom: 22px;
+  }
+
+  .contact-address {
+    margin-top: 40px;
+  }
+
+  footer {
+    border-bottom: 1px solid #514949;
+  }
+
+  .footer-date {
+    height: 50px;
+  }
+
+  .footer-date p {
+    font-family: Averta-Bold;
+    font-size: 12px;
   }
 
 }
