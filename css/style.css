@@ -1,26 +1,32 @@
-@font-face{
-    font-family: 'Averta';
-    src: url('/fonts/Averta-Black.woff') format('woff'),
-        url('/fonts/Averta-Black.woff') format('woff');
-        font-weight:500;
-        font-style: normal;
+@font-face {
+  font-family: "Averta-Regular";
+  src: url("../fonts/Averta.woff") format("woff"),
+       url("../fonts/Averta.otf") format("opentype");
+  font-weight: normal;
 }
 
-@font-face{
-    font-family: 'Averta-Regular';
-    src: url('/fonts/Averta.woff') format('woff');
-        font-style: normal;
+@font-face {
+  font-family: "Averta-Bold";
+  src: url("../fonts/Averta-Bold.woff") format("woff"),
+       url("../fonts/Averta-Bold.otf") format("opentype");
+  font-weight: normal;
 }
 
-@font-face{
-    font-family: 'Averta-Bold';
-    src: url('/fonts/Averta-Bold.woff')  format('woff');
-    font-style: normal;
+@font-face {
+  font-family: "Averta-Semibold";
+  src: url("../fonts/Averta-Semibold.woff") format("woff"),
+       url("../fonts/Averta-Semibold.otf") format("opentype");
+  font-weight: normal;
 }
-
+html{
+  overflow-x: hidden; 
+}
 body {
   overflow-x: hidden;
-  font-family: Averta-Semibold;
+  font-family: Averta-Regular;
+  color: #505962;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .active {
@@ -29,6 +35,10 @@ body {
 }
 
 /* navigation */
+
+header {
+ font-family: Averta-Regular; 
+}
 
 .navbar {
   text-transform: capitalize;
@@ -39,11 +49,10 @@ body {
 }
 
 
-
 .navbar-dark .navbar-nav .nav-link {
   color: #514949;
   padding-top: 0.8rem;
-  font-size: 16px;
+  font-size: 16px !important;
   font-family:  Averta-Regular !important;
 }
 
@@ -56,6 +65,12 @@ body {
   color: #E7332B !important;
 }
 
+.btn-red {
+  width: 148px;
+  height: 46px;
+  background: #E7332B;
+  color: #fff;
+}
 /* mentor page */
 
 .mentor-intro {
@@ -127,17 +142,11 @@ body {
   font-size: 24px;
 }
 
-.btn-red {
-  width: 148px;
-  height: 46px;
-  background: #E7332B;
-  color: #fff;
-}
 
 /* footer */
 
 footer p {
-  font-family: Averta-Bold;
+  /* font-family: Averta-Bold; */
   font-size: 16px;
   padding: 10px 0 10px 0;
 }
@@ -165,20 +174,141 @@ footer ul {
   flex-direction: column;
 }
 
+footer * {
+  font-family: Averta-Regular;
+  color: #505962;
+  line-height: 1.5;
+}
+
+
 footer a {
   color: #514949;
-  
+  font-size: 16px !important;
 }
 
 footer li {
   font-family: Averta-Regular;
-  font-size: 12px
+  font-size: 16px !important;
 }
 
 footer a:hover {
   text-decoration: none;
   color: #E7332B;
   font-weight: 700;
+}
+
+
+/* bells codes */
+.mentor-detail * {
+  margin: 0;
+}
+
+.mentor-detail * + * {
+  margin-top: 0.75em;
+}
+
+@media (min-width: 768px) {
+  .mentor-detail  {
+    margin-bottom: 5em;
+  }
+
+  .mentor-image img {
+    width: 100%;
+  }
+}
+
+#mentor-gallery .col-md-3 {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.mentor-detail img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.mentor-detail:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.mentor-image {
+  overflow: hidden;
+}
+
+
+
+/* FONT SIZING  */
+.mentor-name {
+  font-family: Averta-Semibold;
+  font-size: 1em;
+  color: #514949;
+}
+
+.mentor-track {
+  font-family: Averta-Semibold;
+  font-size: 0.875em;
+  line-height: 1.7;
+  color: #514949;
+}
+
+.sub-heading {
+  font-family: Averta-Regular;
+  font-size: 0.875em;
+  line-height: 1.7;
+  color: #e7332b;
+}
+
+.big-heading {
+  font-family: Averta-Regular;
+  font-size: 0.875em;
+  line-height: 1.7;
+  text-align: center;
+  color: #514949;
+}
+@media (min-width: 500px) {
+  .big-heading {
+    font-family: Averta-Bold;
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  
+
+  .mentor-name {
+    font-family: Averta-Bold;
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 1.5;
+    color: #514949;
+  }
+
+  .mentor-track {
+    font-family: Averta-Regular;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #514949;
+    opacity: 0.9;
+  }
+
+  .big-heading {
+    font-family: Averta-Bold;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: center;
+    color: #514949;
+  }
+}
+
+.custom-container {
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    padding: 0 5em;
+  }
 }
 
 /* media queries */
@@ -253,19 +383,6 @@ footer a:hover {
 
   .contact-address {
     margin-top: 40px;
-  }
-
-  footer {
-    border-bottom: 1px solid #514949;
-  }
-
-  .footer-date {
-    height: 50px;
-  }
-
-  .footer-date p {
-    font-family: Averta-Bold;
-    font-size: 12px;
   }
 
 }
