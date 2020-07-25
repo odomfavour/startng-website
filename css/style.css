@@ -123,7 +123,7 @@ header {
 
 #enroll {
   height: 669px;
-  padding: 173px 0 153px 0;
+  padding: 100px 0 0px 0;
 }
 
 #enroll-content {
@@ -197,7 +197,23 @@ footer a:hover {
   font-weight: 700;
 }
 
+/* footer */
 
+.disp-1 {
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 1000px ) {
+    .disp-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .disp-2 {
+        display: none;
+    }
+}
 /* bells codes */
 .mentor-detail * {
   margin: 0;
@@ -215,6 +231,7 @@ footer a:hover {
   .mentor-image img {
     width: 100%;
   }
+
 }
 
 #mentor-gallery .col-md-3 {
@@ -324,7 +341,7 @@ footer a:hover {
   }
 
   .mentor-info {
-  padding: 0 10px ;
+  padding: 0 20px ;
 }
 
   .mentor-intro p{
@@ -339,9 +356,6 @@ footer a:hover {
 
   .mentor-detail {
     margin-bottom: 30px;
-  }
-  .mentor-info {
-    padding: 0 10px ;
   }
 
   /* enroll section */
